@@ -1,0 +1,19 @@
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+server:
+  port: 8090
+  ssl:
+    key-store: classpath:blog-yoghurts-cn.pfx
+    key-store-password: IDDX6zAE
+    key-store-type: PKCS12
+    enabled: true
+
+yoghurt:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800 # 7 days
+    header: Authorization
+
+
+
+
