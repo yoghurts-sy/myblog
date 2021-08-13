@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be79d6a5-3a5b-4e21-a073-852268779d35" name="Default Changelist" comment="test logout">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/111166.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/666.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloBranch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/master6666.txt" beforeDir="false" />
+    <list default="true" id="2b556ab3-6276-4fd0-b8fe-f4749fbe1cb1" name="Default Changelist" comment="Merge branch 'main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +146,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
