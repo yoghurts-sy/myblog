@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be79d6a5-3a5b-4e21-a073-852268779d35" name="Default Changelist" comment="test logout">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/111166.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/666.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloBranch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/master6666.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,6 +105,7 @@
       <list>
         <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +148,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
