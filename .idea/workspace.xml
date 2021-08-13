@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be79d6a5-3a5b-4e21-a073-852268779d35" name="Default Changelist" comment="">
+    <list default="true" id="be79d6a5-3a5b-4e21-a073-852268779d35" name="Default Changelist" comment="test logout">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/111166.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/666.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloBranch.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/master6666.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -38,8 +49,11 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="1vRdFw7OTUTeAsL8THaLi3oEzSs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -95,6 +109,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -117,8 +132,16 @@
       <workItem from="1627980896625" duration="1227000" />
       <workItem from="1628045256813" duration="41000" />
       <workItem from="1628330966645" duration="698000" />
-      <workItem from="1628844157792" duration="258000" />
+      <workItem from="1628844157792" duration="1789000" />
     </task>
+    <task id="LOCAL-00001" summary="test logout">
+      <created>1628844508638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628844508638</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +157,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="test logout" />
   </component>
 </project>
