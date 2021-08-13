@@ -54,6 +54,7 @@ public class AccountController {
     @RequiresAuthentication
     @GetMapping("/logout")
     public Result logout() {
+        System.out.println("test git");
         SecurityUtils.getSubject().logout();
         return Result.success(null);
     }
