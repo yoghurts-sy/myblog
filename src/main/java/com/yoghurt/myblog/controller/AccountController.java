@@ -55,6 +55,8 @@ public class AccountController {
     @GetMapping("/logout")
     public Result logout() {
         System.out.println("test git");
+        System.out.println("test feature");
+        System.out.println("teststt  sad");
         SecurityUtils.getSubject().logout();
         return Result.success(null);
     }
