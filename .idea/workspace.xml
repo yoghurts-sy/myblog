@@ -33,6 +33,7 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectId" id="1vRdFw7OTUTeAsL8THaLi3oEzSs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -110,7 +111,7 @@
       <workItem from="1626767330113" duration="28410000" />
       <workItem from="1627980896625" duration="1227000" />
       <workItem from="1628045256813" duration="41000" />
-      <workItem from="1628330966645" duration="697000" />
+      <workItem from="1628330966645" duration="698000" />
     </task>
     <servers />
   </component>
