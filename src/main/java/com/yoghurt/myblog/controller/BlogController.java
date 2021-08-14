@@ -8,8 +8,11 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yoghurt.myblog.common.lang.Result;
 import com.yoghurt.myblog.entity.Blog;
+import com.yoghurt.myblog.entity.User;
 import com.yoghurt.myblog.service.BlogService;
+import com.yoghurt.myblog.service.UserService;
 import com.yoghurt.myblog.shiro.AccountProfile;
+import com.yoghurt.myblog.utils.JwtUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +31,11 @@ import java.time.LocalDateTime;
  */
 @RestController
 public class BlogController {
+    @Autowired
+    private JwtUtils jwtUtils;
+
+    @Autowired
+    private UserService userService;
 
     @Autowired
     private BlogService blogService;
@@ -39,8 +47,24 @@ public class BlogController {
      */
     @GetMapping("/blogs")
     public Result list(@RequestParam(defaultValue = "1") Integer currentPage) {
+
+        AccountProfile user = (AccountProfile)SecurityUtils.getSubject().getPrincipal();
+        System.out.println(user);
+        if (user == null) {
+            return Result.fail("用户未登录！");
+        }
         Page page = new Page(currentPage, 5);
-        IPage pages = blogService.page(page, new QueryWrapper<Blog>().orderByDesc("created"));
+        IPage pages = blogService.page(page, new QueryWrapper<Blog>().eq("user_id", user.getId()).orderByDesc("created"));
+        return Result.success(pages);
+    }
+
+    @GetMapping("/blogs/{username}")
+    public Result listByUsername(@RequestParam(defaultValue = "1") Integer currentPage, @PathVariable(name = "username") String username) {
+        User user = userService.getOne(new QueryWrapper<User>().eq("username", username));
+        Long userId = user.getId();
+        Page page = new Page(currentPage, 5);
+        IPage pages = blogService.page(page, new QueryWrapper<Blog>().eq("user_id", userId).orderByDesc("created"));
+        System.out.println(pages);
         return Result.success(pages);
     }
 
