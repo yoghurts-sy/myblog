@@ -10,16 +10,18 @@ import com.yoghurt.myblog.common.lang.Result;
 import com.yoghurt.myblog.entity.User;
 import com.yoghurt.myblog.service.UserService;
 import com.yoghurt.myblog.utils.JwtUtils;
+import com.yoghurt.myblog.utils.uploadCOSUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 @RestController
 public class AccountController {
@@ -32,7 +34,7 @@ public class AccountController {
 
     @PostMapping("/login")
     public Result login(@Validated @RequestBody LoginDto loginDto, HttpServletResponse httpServletResponse) {
-        User user = userService.getOne(new QueryWrapper<User>().eq("username", loginDto.getUsername()));
+        User user = userService.getOne(new QueryWrapper<User>().eq("email", loginDto.getEmail()));
         Assert.notNull(user, "用户不存在");
 
         if (!user.getPassword().equals(SecureUtil.md5(loginDto.getPassword()))) {
@@ -54,10 +56,52 @@ public class AccountController {
     @RequiresAuthentication
     @GetMapping("/logout")
     public Result logout() {
-        System.out.println("test git");
-        System.out.println("test feature");
-        System.out.println("teststt  sad");
         SecurityUtils.getSubject().logout();
         return Result.success(null);
     }
+
+    @PostMapping("/register")
+    public Result register(@Validated @RequestBody User user, HttpServletResponse httpServletResponse) {
+        System.out.println(user);
+        User checkUser = userService.getOne(new QueryWrapper<User>().eq("username", user.getUsername()));
+        User checkUser2 = userService.getOne(new QueryWrapper<User>().eq("email", user.getUsername()));
+        if (checkUser != null) {
+            return Result.fail("Repeat of Username!");
+        }
+        if (checkUser2 != null) {
+            return Result.fail("Repeat of Email!");
+        }
+        user.setPassword(SecureUtil.md5(user.getPassword()));
+        user.setStatus(0);
+        LocalDateTime date = LocalDateTime.now();
+        /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");*/
+        user.setCreated(date);
+        user.setLastLogin(date);
+        userService.save(user);
+
+        checkUser = userService.getOne(new QueryWrapper<User>().eq("username", user.getUsername()));
+        System.out.println(checkUser);
+        String jwt = jwtUtils.generateToken(checkUser.getId());
+        httpServletResponse.setHeader("Authorization", jwt);
+        httpServletResponse.setHeader("Access-control-Expose-Headers", "Authorization");
+        return Result.success(
+                MapUtil.builder()
+                        .put("id", checkUser.getId())
+                        .put("username", checkUser.getUsername())
+                        .put("avatar", checkUser.getAvatar())
+                        .put("email", checkUser.getEmail())
+                        .map()
+        );
+    }
+
+    @PostMapping("/upload")
+    public Object upload(@RequestParam(value = "file") MultipartFile file){
+        if (file == null){
+            System.out.println("文件为空！");
+            return Result.fail("文件为空");
+        }
+        String uploadfile = uploadCOSUtils.uploadfile(file);
+        return Result.success(uploadfile);
+    }
+
 }

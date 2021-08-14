@@ -51,6 +51,7 @@ public class BlogController {
      */
     @GetMapping("/blog/{id}")
     public Result detail(@PathVariable(name="id") Long id) {
+        System.out.println("blog request");
         Blog blog = blogService.getById(id);
         Assert.notNull(blog,"This Blog has been teared down.");
         return Result.success(blog);
