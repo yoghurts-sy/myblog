@@ -9,9 +9,12 @@ import com.yoghurt.myblog.common.dto.LoginDto;
 import com.yoghurt.myblog.common.lang.Result;
 import com.yoghurt.myblog.entity.User;
 import com.yoghurt.myblog.service.UserService;
+import com.yoghurt.myblog.shiro.JwtToken;
 import com.yoghurt.myblog.utils.JwtUtils;
 import com.yoghurt.myblog.utils.uploadCOSUtils;
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -21,7 +24,6 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @RestController
 public class AccountController {
@@ -43,6 +45,8 @@ public class AccountController {
         String jwt = jwtUtils.generateToken(user.getId());
         httpServletResponse.setHeader("Authorization", jwt);
         httpServletResponse.setHeader("Access-control-Expose-Headers", "Authorization");
+
+
         return Result.success(
                 MapUtil.builder()
                         .put("id", user.getId())

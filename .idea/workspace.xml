@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b556ab3-6276-4fd0-b8fe-f4749fbe1cb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/utils/uploadCOSUtils.java" afterDir="false" />
+    <list default="true" id="2b556ab3-6276-4fd0-b8fe-f4749fbe1cb1" name="Default Changelist" comment="Merge branch 'main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
@@ -108,39 +107,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myblog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/common/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/common/dto/LoginDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yoghurt/myblog/controller/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/CodeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/MyblogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/MyblogApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/dto/LoginDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/dto/LoginDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/lang/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/common/lang/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/MybatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/MybatisPlusConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/config/ShiroConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/BlogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/entity/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/entity/Blog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/mapper/BlogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/mapper/BlogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/BlogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/impl/BlogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/impl/BlogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/AccountProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/AccountProfile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/AccountRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/AccountRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/JwtFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/JwtToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/shiro/JwtToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/utils/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yoghurt/myblog/utils/JwtUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +220,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be79d6a5-3a5b-4e21-a073-852268779d35" name="Default Changelist" comment="" />
+      <changelist id="2b556ab3-6276-4fd0-b8fe-f4749fbe1cb1" name="Default Changelist" comment="Merge branch 'main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
       <created>1626528734589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -265,6 +235,7 @@
       <workItem from="1628045256813" duration="41000" />
       <workItem from="1628330966645" duration="698000" />
       <workItem from="1628844157792" duration="1789000" />
+      <workItem from="1628941891503" duration="4817000" />
     </task>
     <task id="LOCAL-00001" summary="test logout">
       <created>1628844508638</created>
