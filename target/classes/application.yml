@@ -6,7 +6,7 @@ server:
     key-store: classpath:blog-yoghurts-cn.pfx
     key-store-password: IDDX6zAE
     key-store-type: PKCS12
-    enabled: true
+    enabled: false
 
 yoghurt:
   jwt:
@@ -14,6 +14,17 @@ yoghurt:
     expire: 604800 # 7 days
     header: Authorization
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
 
 
 
