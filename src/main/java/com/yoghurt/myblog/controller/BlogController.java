@@ -49,7 +49,6 @@ public class BlogController {
     public Result list(@RequestParam(defaultValue = "1") Integer currentPage) {
 
         AccountProfile user = (AccountProfile)SecurityUtils.getSubject().getPrincipal();
-        System.out.println(user);
         if (user == null) {
             return Result.fail("用户未登录！");
         }
@@ -64,7 +63,6 @@ public class BlogController {
         Long userId = user.getId();
         Page page = new Page(currentPage, 5);
         IPage pages = blogService.page(page, new QueryWrapper<Blog>().eq("user_id", userId).orderByDesc("created"));
-        System.out.println(pages);
         return Result.success(pages);
     }
 
@@ -75,7 +73,6 @@ public class BlogController {
      */
     @GetMapping("/blog/{id}")
     public Result detail(@PathVariable(name="id") Long id) {
-        System.out.println("blog request");
         Blog blog = blogService.getById(id);
         Assert.notNull(blog,"This Blog has been teared down.");
         return Result.success(blog);
