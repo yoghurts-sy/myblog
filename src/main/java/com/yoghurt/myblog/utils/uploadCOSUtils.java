@@ -24,8 +24,8 @@ public class uploadCOSUtils {
     private static final String SecretId = "AKIDrulUzILIuaImjQu9nEhpsnHPK7HbQjRs";
     //SecretKey 秘钥
     private static final String SecretKey = "1nLgW7vN6lJckicBU4PUJo4C4mSqyx2V";
+    private static String prefix;
     // 腾讯云 自定义文件夹名称
-    private static final String prefix = "avatar/";
     // 访问域名
     public static final String URL = "https://myblog-1305163160.cos.ap-shanghai.myqcloud.com/";
     //public static final String URL = "https://markdowngraph-1305163160.cos.ap-shenzhen-fsi.myqcloud.com/";
@@ -37,7 +37,9 @@ public class uploadCOSUtils {
     private static ClientConfig clientConfig = new ClientConfig(region);
 
 
-    public static String uploadfile(MultipartFile file){
+    public static String uploadfile(MultipartFile file, Integer status){
+        if (status == 1) prefix = "blog-image/";
+        else prefix = "avatar/";
         // 创建 COS 客户端连接
         COSClient cosClient = new COSClient(credentials, clientConfig);
         String fileName = file.getOriginalFilename();

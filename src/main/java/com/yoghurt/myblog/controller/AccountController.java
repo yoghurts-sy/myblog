@@ -104,7 +104,7 @@ public class AccountController {
             System.out.println("文件为空！");
             return Result.fail("文件为空");
         }
-        String uploadfile = uploadCOSUtils.uploadfile(file);
+        String uploadfile = uploadCOSUtils.uploadfile(file, 0);
         return Result.success(uploadfile);
     }
 
