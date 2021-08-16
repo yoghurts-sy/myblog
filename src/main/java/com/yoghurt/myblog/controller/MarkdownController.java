@@ -53,13 +53,8 @@ public class MarkdownController {
     }
 
     @RequiresAuthentication
-    @PostMapping("/download")//post
-    public void download(/*@RequestBody Long id,@RequestBody String title,*/ HttpServletRequest request, HttpServletResponse response) {
-
-        Map<String, String[]> parameterMap = request.getParameterMap();
-        System.out.println(parameterMap.toString());
-        Long id = Long.valueOf(request.getParameter("id"));
-        String title = request.getParameter("title");
+    @GetMapping("/download")//post
+    public void download(Long id, String title, HttpServletRequest request, HttpServletResponse response) {
         System.out.println(id +" "+title);
 
         Blog blog = blogService.getById(id);
