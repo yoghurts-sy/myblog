@@ -85,7 +85,7 @@ public class BlogController {
      */
     @RequiresAuthentication
     @PostMapping("/blog/edit")
-    public Result edit(@Validated @RequestBody Blog blog) {
+    public Result edit(@Validated @RequestBody Blog blog) throws InterruptedException {
         Blog temp = null;
         if (blog.getId() != null) { // update blog
             temp = blogService.getById(blog.getId());
@@ -99,6 +99,8 @@ public class BlogController {
         temp.setCreated(LocalDateTime.now());
         BeanUtil.copyProperties(blog, temp, "id","userId", "created","status");
         blogService.saveOrUpdate(temp);
+
+        Thread.currentThread().sleep(1000);//模拟效果
 
         return Result.success(null);
     }
