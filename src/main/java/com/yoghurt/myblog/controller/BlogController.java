@@ -100,8 +100,21 @@ public class BlogController {
         BeanUtil.copyProperties(blog, temp, "id","userId", "created","status");
         blogService.saveOrUpdate(temp);
 
-        Thread.currentThread().sleep(1000);//模拟效果
+        Thread.currentThread().sleep(500);//模拟效果
 
         return Result.success(null);
+    }
+
+
+    @RequiresAuthentication
+    @PostMapping("/blog/delete")
+    public Result delete(@Validated @RequestBody Blog blog) {
+        if (blog.getId() != null) {
+            boolean res = blogService.removeById(blog.getId());
+            if (res) {
+                return Result.success(null);
+            }
+        }
+        return Result.fail("该博客不存在！");
     }
 }

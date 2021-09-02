@@ -78,7 +78,6 @@ public class AccountController {
         user.setPassword(SecureUtil.md5(user.getPassword()));
         user.setStatus(0);
         LocalDateTime date = LocalDateTime.now();
-        /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");*/
         user.setCreated(date);
         user.setLastLogin(date);
         userService.save(user);
