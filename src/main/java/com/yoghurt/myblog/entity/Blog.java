@@ -41,7 +41,6 @@ public class Blog implements Serializable {
     @NotBlank(message = "Description is blank")
     private String description;
 
-    @NotBlank(message = "Content is blank")
     private String content;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
